@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="org.eclipse.jetty:jetty-webapp:9.3.0.RC0" type="repository">
+    <properties maven-id="org.eclipse.jetty:jetty-webapp:9.3.0.RC0" />
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-webapp-9.3.0.RC0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-xml-9.3.0.RC0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-util-9.3.0.RC0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-servlet-9.3.0.RC0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-security-9.3.0.RC0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-server-9.3.0.RC0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/javax.servlet-api-3.1.0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-http-9.3.0.RC0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-io-9.3.0.RC0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-webapp-9.3.0.RC0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-xml-9.3.0.RC0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-util-9.3.0.RC0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-servlet-9.3.0.RC0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-security-9.3.0.RC0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-server-9.3.0.RC0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/javax.servlet-api-3.1.0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-http-9.3.0.RC0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-io-9.3.0.RC0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
