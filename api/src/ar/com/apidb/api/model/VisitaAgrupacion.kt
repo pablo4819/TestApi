@@ -81,7 +81,7 @@ class VisitaAgrupacion : Entity<Int, VisitaAgrupacion> {
 
         fun getByCodArtAndAgrId(codeArt: String, agrupacion_id: Int): VisitaAgrupacion? {
             @Suppress("UNCHECKED_CAST")
-            val result = Db.get().search(VisitaAgrupacion::class.java, TABLE, "${VISITA_AGRUPACION_CODIGO_ART}=? AND $VISITA_AGRUPACION_AGRUPACION_ID} =?", codeArt, agrupacion_id) as List<VisitaAgrupacion>
+            val result = Db.get().search(VisitaAgrupacion::class.java, TABLE, "$VISITA_AGRUPACION_CODIGO_ART=? AND $VISITA_AGRUPACION_AGRUPACION_ID =?", codeArt, agrupacion_id) as List<VisitaAgrupacion>
             return if (result.isNotEmpty()) result[0] else null
         }
     }
@@ -100,7 +100,7 @@ class VisitaAgrupacion : Entity<Int, VisitaAgrupacion> {
     }
 
     fun updateVisitaAgrupacion(codeArt: String, agrupacionId: Int): Int {
-        return Db.get().update(TABLE, cv, "${VISITA_AGRUPACION_CODIGO_ART}=? " + "and ${VISITA_AGRUPACION_AGRUPACION_ID}=?", codeArt, agrupacionId)
+        return Db.get().update(TABLE, cv, "$VISITA_AGRUPACION_CODIGO_ART=? and $VISITA_AGRUPACION_AGRUPACION_ID=?", codeArt, agrupacionId)
     }
 
     override val cv: Values
