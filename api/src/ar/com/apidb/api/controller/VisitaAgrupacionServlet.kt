@@ -92,9 +92,9 @@ class VisitaAgrupacionServlet : HttpServlet() {
             val path = StringUtils.split(req.pathInfo, '/')
             when {
                 path.size == 3 && path[0] == "deletevisitaagrupacion" -> {
-                    val visitaIncumplimiento = VisitaAgrupacion.getByCodArtAndAgrId(path[1].toString(), path[2].toInt())
-                    if (visitaIncumplimiento != null) {
-                        if (visitaIncumplimiento.delete() > 0) {
+                    val visitaAgrupacion = VisitaAgrupacion.getByCodArtAndAgrId(path[1].toString(), path[2].toInt())
+                    if (visitaAgrupacion != null) {
+                        if (visitaAgrupacion.delete() > 0) {
                             resp.outputStream.write(SimpleMsg.create("Visita Agrupacion ha sido eliminada con éxito"))
                             resp.contentType = "application/json"
                             resp.status = HttpServletResponse.SC_OK

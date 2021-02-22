@@ -1,0 +1,34 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="api:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/api_jar</output-path>
+    <root id="archive" name="api.jar">
+      <element id="module-output" name="api" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-continuation/9.3.0.RC0/jetty-continuation-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-webapp-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-xml-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-util-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-servlet-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-security-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-server-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/javax.servlet-api-3.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-http-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/eclipse/jetty/jetty-http/9.3.0.RC0/jetty-io-9.3.0.RC0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/slf4j/slf4j-api/1.6.2/logback-classic-0.9.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/slf4j/slf4j-api/1.6.2/logback-core-0.9.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.jar" path-in-jar="/" />
+      <element id="library" level="application" name="firebase-app" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/mysql/mysql-connector-java/8.0.22/protobuf-java-3.11.4.jar" path-in-jar="/" />
+      <element id="library" level="application" name="firebase-firestore" />
+      <element id="library" level="application" name="firebase-analytics" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-stdlib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-reflect.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-test.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-stdlib-jdk7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-stdlib-jdk8.jar" path-in-jar="/" />
+      <element id="library" level="application" name="firebase-database" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/bin/home/pablo/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

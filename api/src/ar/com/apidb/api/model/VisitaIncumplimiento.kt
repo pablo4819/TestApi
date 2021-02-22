@@ -101,8 +101,8 @@ class VisitaIncumplimiento : Entity<Int, VisitaIncumplimiento> {
         visita_incumplimiento_codigo_art = c.getString(VISITA_INCUMPLIMIENTO_CODIGO_ART)
     }
 
-    fun updateVisitaIncumplimiento(codeArt: String, IncumplimientoId: Int): Int {
-        return Db.get().update(TABLE, cv, "${VISITA_INCUMPLIMIENTO_CODIGO_ART}=? " + "and ${VISITA_INCUMPLIMIENTO_INCUMPLIMIENTO_ID}=?", codeArt, IncumplimientoId)
+    fun updateVisitaIncumplimiento(codeArt: String, incumplimientoId: Int): Int {
+        return Db.get().update(TABLE, cv, "${VISITA_INCUMPLIMIENTO_CODIGO_ART}=? " + "and ${VISITA_INCUMPLIMIENTO_INCUMPLIMIENTO_ID}=?", codeArt, incumplimientoId)
     }
 
     override var id: Int?
