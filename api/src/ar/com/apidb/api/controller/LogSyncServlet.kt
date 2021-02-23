@@ -1,7 +1,6 @@
 package ar.com.apidb.api.controller
 
 import ar.com.apidb.api.model.LogSync
-import ar.com.apidb.api.model.Visita
 import ar.com.apidb.db.Entity.Companion.LOG
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -16,7 +15,7 @@ class LogSyncServlet : HttpServlet() {
     private val gson: Gson
 
     init {
-        val gsonBuilder = GsonBuilder().setDateFormat("yyyy-MM-dd hh:mm:ss")
+        val gsonBuilder = GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss")
         gson = gsonBuilder.create()
     }
 
@@ -60,8 +59,8 @@ class LogSyncServlet : HttpServlet() {
                 } else {
                     logSync.updatePub = Date()
                     if (logSync.updateLog(logSync.codigo) > 0) {
-                        //resp.outputStream.write(gson.toJson(logSync).toByteArray(StandardCharsets.UTF_8))
-                        resp.outputStream.write(SimpleMsg.create("1"))
+                        resp.outputStream.write(gson.toJson(logSync).toByteArray(StandardCharsets.UTF_8))
+                        //resp.outputStream.write(SimpleMsg.create("1"))
                         resp.contentType = "application/json"
                         resp.status = HttpServletResponse.SC_OK
                     } else {

@@ -15,7 +15,7 @@ class VisitaServlet : HttpServlet() {
     private val gson: Gson
 
     init {
-        val gsonBuilder = GsonBuilder().setDateFormat("yyyy-MM-dd hh:mm:ss")
+        val gsonBuilder = GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss")
         gson = gsonBuilder.create()
     }
 

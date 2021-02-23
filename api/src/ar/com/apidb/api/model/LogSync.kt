@@ -5,10 +5,7 @@ import ar.com.apidb.db.Db
 import ar.com.apidb.db.Entity
 import ar.com.apidb.db.Values
 import ar.com.apidb.helper.FDate
-import ar.com.apidb.mysql.ContentValues
-import com.google.gson.JsonElement
 import java.util.*
-import javax.swing.text.html.HTML.Tag.U
 
 class LogSync : Entity<Int, LogSync> {
 

@@ -38,6 +38,7 @@ class Start {
             redLatitud.addServlet(ServletHolder(VisitaServlet()), "/api/visita/*")
             redLatitud.addServlet(ServletHolder(VisitaIncumplimientoServlet()), "/api/visitaincumplimiento/*")
             redLatitud.addServlet(ServletHolder(VisitaAgrupacionServlet()), "/api/visitaagrupacion/*")
+            redLatitud.addServlet(ServletHolder(SeguimientoServlet()), "/api/seguimiento/*")
 
             val contexts = ContextHandlerCollection()
             contexts.handlers = arrayOf<Handler>(redLatitud)

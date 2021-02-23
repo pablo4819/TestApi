@@ -16,7 +16,7 @@ class Cal {
         get() = cal!!.get(Calendar.DAY_OF_MONTH)
 
     val hour: Int
-        get() = cal!!.get(Calendar.HOUR)
+        get() = cal!!.get(Calendar.HOUR_OF_DAY)
 
     val minute: Int
         get() = cal!!.get(Calendar.MINUTE)
