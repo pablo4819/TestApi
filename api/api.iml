@@ -14,9 +14,5 @@
     <orderEntry type="library" name="org.eclipse.jetty:jetty-continuation:9.3.0.RC0" level="project" />
     <orderEntry type="library" name="mysql:mysql-connector-java:8.0.22" level="project" />
     <orderEntry type="library" name="com.google.code.gson:gson:2.8.6" level="project" />
-    <orderEntry type="library" name="firebase-analytics" level="application" />
-    <orderEntry type="library" name="firebase-app" level="application" />
-    <orderEntry type="library" name="firebase-database" level="application" />
-    <orderEntry type="library" name="firebase-firestore" level="application" />
   </component>
 </module>
