@@ -29,8 +29,6 @@ class Visita : Entity<Int, Visita> {
     var visita_shtnombre: String? = null
     var visita_estado: Int? = null
     var visita_sincronizada: Int? = null
-    var visita_presentada: Int? = null
-    var visita_presentada_users_id: Int? = null
     var visita_tituloitem_codigo: Int? = null
     var visita_agrupacion_id: Int? = null
     var visita_rar_contacto: String? = null
@@ -42,8 +40,6 @@ class Visita : Entity<Int, Visita> {
     var visita_motivo: Int? = null
     var visita_resultado: Int? = null
     var visita_nrovisita: Int? = null
-    var visita_rechazo_id: Int? = null
-    var visita_fgen: Date? = null
     var visita_fmod: Date? = null
     var visita_codigo: Int? = null
     var visita_efectiva: Int? = null
@@ -103,8 +99,6 @@ class Visita : Entity<Int, Visita> {
             values.put(VISITA_SHTNOMBRE, visita_shtnombre)
             values.put(VISITA_ESTADO, visita_estado)
             values.put(VISITA_SINCRONIZADA, "1")
-            values.put(VISITA_PRESENTADA, visita_presentada)
-            values.put(VISITA_PRESENTADA_USERS_ID, visita_presentada_users_id)
             values.put(VISITA_TITULOITEM_CODIGO, visita_tituloitem_codigo)
             values.put(VISITA_AGRUPACION_ID, visita_agrupacion_id)
             values.put(VISITA_RAR_CONTACTO, visita_rar_contacto)
@@ -116,8 +110,6 @@ class Visita : Entity<Int, Visita> {
             values.put(VISITA_MOTIVO, visita_motivo)
             values.put(VISITA_RESULTADO, visita_resultado)
             values.put(VISITA_NROVISITA, visita_nrovisita)
-            values.put(VISITA_RECHAZO_ID, visita_rechazo_id)
-            values.put(VISITA_FGEN, FDate.formatU(visita_fgen))
             values.put(VISITA_FMOD, FDate.formatU(visita_fmod))
             values.put(VISITA_CODIGO, visita_codigo)
             values.put(VISITA_EFECTIVA, visita_efectiva)
@@ -148,8 +140,6 @@ class Visita : Entity<Int, Visita> {
         visita_shtnombre = c.getString(VISITA_SHTNOMBRE)
         visita_estado = c.getInt(VISITA_ESTADO)
         visita_sincronizada = c.getInt(VISITA_SINCRONIZADA)
-        visita_presentada = c.getInt(VISITA_PRESENTADA)
-        visita_presentada_users_id = c.getInt(VISITA_PRESENTADA_USERS_ID)
         visita_tituloitem_codigo = c.getInt(VISITA_TITULOITEM_CODIGO)
         visita_agrupacion_id = c.getInt(VISITA_AGRUPACION_ID)
         visita_rar_contacto = c.getString(VISITA_RAR_CONTACTO)
@@ -161,8 +151,6 @@ class Visita : Entity<Int, Visita> {
         visita_motivo = c.getInt(VISITA_MOTIVO)
         visita_resultado = c.getInt(VISITA_RESULTADO)
         visita_nrovisita = c.getInt(VISITA_NROVISITA)
-        visita_rechazo_id = c.getInt(VISITA_RECHAZO_ID)
-        visita_fgen = FDate.parseDate(c.getString(VISITA_FGEN))
         visita_fmod = FDate.parseDate(c.getString(VISITA_FMOD))
         visita_codigo = c.getInt(VISITA_CODIGO)
         visita_efectiva = c.getInt(VISITA_EFECTIVA)
@@ -198,8 +186,6 @@ class Visita : Entity<Int, Visita> {
         const val VISITA_SHTNOMBRE = "visita_shtnombre"
         const val VISITA_ESTADO = "visita_estado"
         const val VISITA_SINCRONIZADA = "visita_sincronizada"
-        const val VISITA_PRESENTADA = "visita_presentada"
-        const val VISITA_PRESENTADA_USERS_ID = "visita_presentada_users_id"
         const val VISITA_TITULOITEM_CODIGO = "visita_tituloitem_codigo"
         const val VISITA_AGRUPACION_ID = "visita_agrupacion_id"
         const val VISITA_RAR_CONTACTO = "visita_rar_contacto"
@@ -211,8 +197,6 @@ class Visita : Entity<Int, Visita> {
         const val VISITA_MOTIVO = "visita_motivo"
         const val VISITA_RESULTADO = "visita_resultado"
         const val VISITA_NROVISITA = "visita_nrovisita"
-        const val VISITA_RECHAZO_ID = "visita_rechazo_id"
-        const val VISITA_FGEN = "visita_fgen"
         const val VISITA_FMOD = "visita_fmod"
         const val VISITA_CODIGO = "visita_codigo"
         const val VISITA_EFECTIVA = "visita_efectiva"
