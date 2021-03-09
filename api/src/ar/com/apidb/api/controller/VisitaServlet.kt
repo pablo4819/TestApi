@@ -5,13 +5,14 @@ import ar.com.apidb.db.Entity.Companion.LOG
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import org.apache.commons.lang.StringUtils
+import java.lang.Thread.sleep
 import java.nio.charset.StandardCharsets
+import java.util.concurrent.Semaphore
 import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
 class VisitaServlet : HttpServlet() {
-
     private val gson: Gson
 
     init {
@@ -54,6 +55,7 @@ class VisitaServlet : HttpServlet() {
 
     override fun doPost(req: HttpServletRequest, resp: HttpServletResponse) {
         try {
+            sleep(15000)
             val visita = gson.fromJson(req.reader, Visita::class.java)
             if (visita != null) {
                 if (Visita.getByCodArt(visita.visita_codigo_art!!) == null) {
@@ -107,7 +109,7 @@ class VisitaServlet : HttpServlet() {
                             resp.status = HttpServletResponse.SC_OK
                         }
                     } else {
-                        resp.outputStream.write(SimpleMsg.create("Datos incorrectos en la Visita"))
+                        resp.outputStream.write(SimpleMsg.create("Datos incorrectos en la Visita a eliminar"))
                         resp.contentType = "application/json"
                         resp.status = HttpServletResponse.SC_NOT_FOUND
                     }

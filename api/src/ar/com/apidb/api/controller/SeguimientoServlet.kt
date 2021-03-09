@@ -49,6 +49,7 @@ class SeguimientoServlet : HttpServlet() {
 
     override fun doPost(req: HttpServletRequest, resp: HttpServletResponse) {
         try {
+            Thread.sleep(15000)
             val seguimiento = gson.fromJson(req.reader, Seguimiento::class.java)
             if (seguimiento != null) {
                 val visita = Visita.getByCodArt(seguimiento.seguimiento_codigo_art!!)

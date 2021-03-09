@@ -49,6 +49,7 @@ class VisitaAgrupacionServlet : HttpServlet() {
 
     override fun doPost(req: HttpServletRequest, resp: HttpServletResponse) {
         try {
+            Thread.sleep(15000)
             val visitaAgrupacion = gson.fromJson(req.reader, VisitaAgrupacion::class.java)
             if (visitaAgrupacion != null) {
                 val visita = Visita.getByCodArt(visitaAgrupacion.visita_agrupacion_codigo_art!!)

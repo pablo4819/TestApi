@@ -49,6 +49,7 @@ class PrsVisitaServlet : HttpServlet() {
 
     override fun doPost(req: HttpServletRequest, resp: HttpServletResponse) {
         try {
+            Thread.sleep(15000)
             val prsVisita = gson.fromJson(req.reader, PrsVisita::class.java)
             if (prsVisita != null) {
                 val visita = Visita.getByCodArt(prsVisita.prs_visita_codigo_art!!)

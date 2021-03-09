@@ -49,6 +49,7 @@ class VisitaIncumplimientoServlet : HttpServlet() {
 
     override fun doPost(req: HttpServletRequest, resp: HttpServletResponse) {
         try {
+            Thread.sleep(15000)
             val visitaIncumplimiento = gson.fromJson(req.reader, VisitaIncumplimiento::class.java)
             if (visitaIncumplimiento != null) {
                 val visita = Visita.getByCodArt(visitaIncumplimiento.visita_incumplimiento_codigo_art!!)
